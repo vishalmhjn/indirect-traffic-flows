@@ -18,7 +18,11 @@ class ParisDatasetLoader(object):
     _modules/torch_geometric_temporal/dataset/pems_bay.html
     """
 
-    def __init__(self, data, travel_times, input_features, output_feature):
+    def __init__(self, 
+                data, 
+                travel_times, 
+                input_features, 
+                output_feature):
         super(ParisDatasetLoader, self).__init__()
         self.df = data
         self.travel_times = travel_times
